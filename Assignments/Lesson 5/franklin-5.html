@@ -1,24 +1,28 @@
 <!doctype html>
 <html lang="en-us">
 <head>
+    
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <meta name="author" content="Your Name Here">
-  <meta name="description" content="page description placeholder">
-  <!-- external style references in the proper cascading order -->    
-  <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">  <!-- Google API font reference -->
+    
+  <title>Looking Outside | Franklin</title>
+  <meta name="author" content="Justin Hall">
+  <meta name="description" content="Weather for the city of Franklin">
+    
+  <!-- external style references in the proper cascading order -->  
+  <link href="https://fonts.googleapis.com/css?family=Candal" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Yrsa" rel="stylesheet">
+    
   <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
-  <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
-  <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
-  <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="styles/small.css">
+  
+    
 </head>
-<body>
+<body id="content">
 
   <header>
-    <img src="images/#" alt="The site logo" width="" height="">
-    <h1>Title</h1>
-    <div class="subheading">Site Motto</div>
+    <img id="logo" src="images/icon2.png" alt="Looking Outside Logo"/>
   </header>
 
   <!-- site navigation use placeholder references -->
@@ -35,31 +39,34 @@
   </nav>
     
   <main>
-    <h2>The City of Franklin</h2>
+    <div id="section4">
+      <h3 style="text-align: center;">The City of Franklin</h3>
     <figure>
-      <img>
+      <img id="franklin" src="images/franklin.jpeg" alt="a view of the city of franklin" height="350px"/>
     </figure>
-    <section>
-      <h3>Weather Summary</h3>    
-      <div class="highlow">
-        <p>High:</p>  
-        <p>Low:</p>  
       </div>
-      <div class="current">
-        Sunny
+    <section id="section1">   
+      
+      <div class="leftcol">
         <picture>
-            <img src="images/#" alt="" width="" height="">
+            <img id="image1" src="images/sun.png" alt="Sunny Weather icon or a picture of a yellow sun" width="300px"  height="350"/>
         </picture>
-      </div>   
-      <div class="conditions">
-        <p>Precipitation:</p>  
-        <p>Wind Speed:</p>  
-      </div>           
+      </div> 
+        
+        <h1>Weather Summary</h1> <br>   
+      <div class="rightcol">
+        <p>High:78°F</p>  
+        <p>Low:45°F</p>  
+        <p>Precipitation: 0%</p>  
+        <p>Wind Speed: 5mph SW</p> 
+      </div>
+      
+                
     </section>
         
-    <section class="forecast">
-      <h3>10 Day Forecast</h3>
-      <table>
+    <section id="section3">
+      <h1>10 Day Forecast</h1>
+      <table class="center">
 	    <thead>
           <tr>
             <th>Day 1</th>
@@ -91,21 +98,37 @@
       </table>
     </section>
       
-    <article>
-      <h3>Franklin Breaks Record</h3>	
-      <p class="town-article">
-        <img src="images/#" alt="" width="" height="">
-        short article content placeholder
-      </p>
-		</article>		  
+    <section id="section2">	
+      
+          <div class="leftcol">
+        <img id="image2" src="images/city.jpeg" alt="sunny city skyline" width="300px" height="300px">
+        </div>
+        <div class="rightcol">
+            <h1 style="text-align: center;">Franklin Breaks Record</h1>
+          <p>With temperatures in the 70s, recent springlike days feel more like April than February. And that’s a problem if you haven’t finished your winter garden chores. <br>
+          
+          Look around your landscape; most likely, your plants are running ahead of season. Flowering pears have already burst into bloom. Camellias are opening their flowers a month early. Daffodils and other spring bulbs are blooming, too. <br>
+          
+              Warm winter weather in January and early February sped up nature’s usual schedule. Many confused plants already think they’re well into spring and are behaving accordingly. That means we need to hurry up and finish pruning, spraying and other chores before fruit trees bloom and rose bushes bud out (if they haven’t already). </p>
+        </div>
+      
+		</section>		  
   
   </main>
     
   <footer>
     <aside>
-      Contact information placeholder
+        Company Contact Info Here 555-555-5555 email@email.com
     </aside>
     <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
+      
+      <div class="rightcol">
+					<a class="socialmedia" target="_blank" href="http://www.facebook.com"><img src="images/facebook.png" alt="facebook"></a> 
+
+					<a class="socialmedia" target="_blank" href="http://www.youtube.com"><img src="images/youtube.png" alt="youtube"></a> 
+
+					<a class="socialmedia" target="_blank" href="http://www.instagram.com"><img src="images/instagram.png" alt="instagram"></a>
+      </div>
   </footer>
 
   <script src="scripts/hamburger.js"></script>
